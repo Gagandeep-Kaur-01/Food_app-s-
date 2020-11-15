@@ -1,0 +1,45 @@
+
+.topHeading{
+    margin-top: 50px;
+    color: red;
+    font-size: 25px;
+}
+.RestHeading{
+    font-size: 20px;
+    margin-left: 150px !important;
+    margin-top: 35px;
+}
+.appForm{
+    margin-top: 45px;
+    margin-left: 150px !important;
+}
+.appFormRight{
+    margin-top: 50px;
+    margin-left: 50px !important;
+}
+.quantity{
+    margin-left: 10px;
+}
+.inputQuantityField{
+    width: 180px;
+    margin-left: 5px;
+    border: none;
+    border-bottom: 1px  solid grey;
+}
+.select{
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 90% !important;    
+}
+.addFieldButton{
+    width: 20%;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.submitButton{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.minusButton{
+    margin-top: 50px;
+}
