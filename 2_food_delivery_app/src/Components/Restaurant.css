@@ -1,0 +1,64 @@
+
+ /*.backImage{
+   background-image: url(./images/sign.jpg); 
+    
+    height: 100% !important;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}*/
+.topHeading{
+    margin-top: 50px;
+    color: red;
+    font-size: 25px;
+    margin-left: 80px;
+}
+.RestHeading{
+    font-size: 20px;
+    margin-left: 150px !important;
+    margin-top: 35px;
+}
+.appForm{
+    margin-top: 45px;
+    margin-left: 150px !important;
+    width: 150;
+}
+.appFormRight{
+    margin-top: 50px;
+    margin-left: 2%; 
+}
+.quantity{
+    margin-left: 10px;
+}
+.inputQuantityField{
+    border: none;
+    border-bottom: 1px  solid grey !important;
+}
+.select{
+    border-bottom: 1px solid grey;
+    width: 93% !important;
+}
+.foodLabel{
+    margin-top: 50px;
+    margin-left: 10px!important;;
+}
+.selectFood{
+    border-bottom: 1px solid grey;
+    
+    margin-top: 50px;
+    margin-left: 5px;
+}    
+.addFieldButton{
+    width: 20% !important;
+    margin-left: 250px;
+    margin-top: 45px;
+    margin-right: 0%;
+}
+.submitButton{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.minusButton{
+    margin-top: 50px;
+    margin-left: 5%;
+}
