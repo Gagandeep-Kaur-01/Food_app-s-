@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  padding: 1%;
+  background-color:purple;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+}
+.display-board {
+  width: 100%;
+  background-color: #bce6eb;
+  padding: 5%;
+  margin-top: 50px;
+}
+.number {
+  color: red;
+  font-size: 75px;
+  text-align: center;
+}
+.mrgnbtm {
+  margin-top: 20px;
+}
+.orderButton{
+  margin-top: 10%;
+  float: left;
+}
+.orderDetail{
+  margin-top: 3%
+}
