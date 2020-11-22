@@ -6,17 +6,26 @@ import { Orders } from './components/Orders'
 import { DisplayBoard } from './components/DisplayBoard'
 import CreateOrder from './components/CreateOrder'
 import { getAllOrders, createOrder } from './services/OrderService'
-import  IsoWidgetWrapper  from './components/settings/widget/widget-wrapper'
+import  IsoWidgetWrapper  from './components/settings/widget/isowidget-wrapper.js'
 import StickerWidget from './components/settings/sticker/sticker-widget'
 
 class App extends Component {
-
-  state = {
+  constructor(props){
+    super(props);
+    this.state = {
     order: {},
     orders: [],
-    numberOfOrders: 0
+    numberOfOrders: 0,
+    food_items: [
+      { id: 'Sahi Paneer', dish: 'Sahi Paneer', rate: '150' },
+      { id: 'Malayi Koppta', dish: 'Malayi Koppta', rate: '200' },
+      { id: 'Sarso da Saag', dish: 'Sarso da Saag', rate: '170' },
+      { id: 'Veg Burger', dish: 'Veg Burger', rate: '150' },
+      { id: 'Noodles', count:0, dish: 'Noodles', rate: '100' },
+      { id:'Manchurian', count:0, dish: 'Manchurian', rate: '170' },
+      
+    ]}
   }
-
   createOrder = (e) => {
       createOrder(this.state.order)
         .then(response => {
@@ -55,6 +64,7 @@ class App extends Component {
                   order={this.state.order}
                   onChangeForm={this.onChangeForm}
                   createOrder={this.createOrder}
+                  foodItems= {this.state.food_items}
                   >
                 </CreateOrder>
             </div>
@@ -82,7 +92,7 @@ class App extends Component {
         <div className="row mrgnbtm">          
           <Orders 
             orders={this.state.orders}
-            bordered={false}
+            foodDetails={this.state.food_items}
             />
         </div>
       </div>

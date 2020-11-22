@@ -1,8 +1,8 @@
 import React from 'react'
 
 
-const CreateOrder = ({onChangeForm, createOrder }) => {
-
+const CreateOrder = ({onChangeForm, createOrder, foodItems } )   => {
+   
 
     return(
         <div className="container">
@@ -14,20 +14,16 @@ const CreateOrder = ({onChangeForm, createOrder }) => {
                         <div className="form-group col-md-6">
                             <label>Select food item</label>
                             <select 
-                            onChange={(e) => onChangeForm(e)}
-                            className="form-control" 
-                            name="item" id="item" placeholder="Select food item"
-                            >
-                                <option value="item">Select</option>
-                                <option value="Sahi Paneer">Sahi Paneer</option>
-                                <option value="Malayi Koppta">Malayi Koppta</option>
-                                <option value="Sarso da Saag">Sarso da Saag</option>
-                                <option value="Veg Burger">Veg Burger</option>
-                                <option value="Noodles">Noodles</option>
-                                <option value="Manchurian">Manchurian</option>
-                                <option value="Chat Papri">Chat Papri</option>
-                                <option value="French Fries">French Fries</option>
-                                </select> 
+                              onChange={(e) => onChangeForm(e)}
+                              className="form-control" 
+                              name="item" id="item" placeholder="Select food item"
+                              >
+                                {foodItems.map(food => (
+                                    <option value={food.id} key={food.id}  >
+                                        {food.dish}
+                                    </option>
+                                ))}
+                            </select> 
                         </div>
                         <div className="form-group col-md-6">
                         <label>Quantity</label>
