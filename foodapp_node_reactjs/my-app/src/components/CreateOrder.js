@@ -12,13 +12,13 @@ const CreateOrder = ({onChangeForm, createOrder }) => {
                 <form>
                     <div className="row">
                         <div className="form-group col-md-6">
-                        <label>Select food item</label>
+                            <label>Select food item</label>
                             <select 
                             onChange={(e) => onChangeForm(e)}
                             className="form-control" 
                             name="item" id="item" placeholder="Select food item"
                             >
-                                <option value="item">option</option>
+                                <option value="item">select</option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
                                 </select> 

@@ -6,6 +6,8 @@ import { Orders } from './components/Orders'
 import { DisplayBoard } from './components/DisplayBoard'
 import CreateOrder from './components/CreateOrder'
 import { getAllOrders, createOrder } from './services/OrderService'
+import  IsoWidgetWrapper  from './components/settings/widget/widget-wrapper'
+import StickerWidget from './components/settings/sticker/sticker-widget'
 
 class App extends Component {
 
@@ -56,17 +58,32 @@ class App extends Component {
                   >
                 </CreateOrder>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4" style={{ marginTop: 60 }}>
+                <IsoWidgetWrapper>  
+                  <StickerWidget  
+                  numberOfOrders={this.state.numberOfOrders}
+                  getAllOrders={this.getAllOrders}
+                  text={"Orders Created"}
+                  icon="ion-android-cart"
+                  iconBgIndex="0"
+                  />
+                </IsoWidgetWrapper>
+            </div>
+
+            {/*<div className="col-md-4">
                 <DisplayBoard
                   numberOfOrders={this.state.numberOfOrders}
                   getAllOrders={this.getAllOrders}
                 >
                 </DisplayBoard>
-            </div>
+               </div> */}
           </div>
         </div>
-        <div className="row mrgnbtm">
-          <Orders orders={this.state.orders}></Orders>
+        <div className="row mrgnbtm">          
+          <Orders 
+            orders={this.state.orders}
+            bordered={false}
+            />
         </div>
       </div>
     );

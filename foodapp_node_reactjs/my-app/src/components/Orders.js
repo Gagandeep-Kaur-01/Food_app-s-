@@ -29,7 +29,7 @@ export const Orders = ({orders}) => {
                     <th>Quantity</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody className="tableBody">
                     {orderTable}
                 </tbody>
             </table>

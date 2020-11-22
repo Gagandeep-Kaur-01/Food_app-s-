@@ -26,5 +26,8 @@
   float: left;
 }
 .orderDetail{
-  margin-top: 3%
+  margin-top: 3%;
+}
+.tableBody{
+  color: rgb(38, 0, 255);
 }
