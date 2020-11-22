@@ -18,9 +18,15 @@ const CreateOrder = ({onChangeForm, createOrder }) => {
                             className="form-control" 
                             name="item" id="item" placeholder="Select food item"
                             >
-                                <option value="item">select</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
+                                <option value="item">Select</option>
+                                <option value="Sahi Paneer">Sahi Paneer</option>
+                                <option value="Malayi Koppta">Malayi Koppta</option>
+                                <option value="Sarso da Saag">Sarso da Saag</option>
+                                <option value="Veg Burger">Veg Burger</option>
+                                <option value="Noodles">Noodles</option>
+                                <option value="Manchurian">Manchurian</option>
+                                <option value="Chat Papri">Chat Papri</option>
+                                <option value="French Fries">French Fries</option>
                                 </select> 
                         </div>
                         <div className="form-group col-md-6">
